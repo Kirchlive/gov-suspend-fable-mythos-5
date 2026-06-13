@@ -71,6 +71,9 @@
     padding:.4rem .6rem;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem}
   .btn:hover{border-color:var(--signal);color:var(--signal)}
   .btn:focus-visible{outline:2px solid var(--signal);outline-offset:2px}
+  .btn-live{border-color:var(--signal);color:var(--signal-ink);background:var(--signal-soft)}
+  .btn-live:hover{background:var(--signal);color:#fff;border-color:var(--signal)}
+  @media (max-width:560px){.btn-live span.lbl-long{display:none}}
 
   /* header */
   header.hero{border-bottom:1px solid var(--line);background:
@@ -186,6 +189,7 @@
 <div class="topbar">
   <span class="tb-id">DOSSIER · <b>FABLE 5 / MYTHOS 5</b> · STATUS&nbsp;<span style="color:var(--signal)">SUSPENDED</span></span>
   <div class="tb-actions">
+    <a class="btn btn-live" href="https://kirchlive.github.io/gov-suspend-fable-mythos-5/" rel="noopener">🔗 Live<span class="lbl-long">&nbsp;site</span> ↗</a>
     <a class="btn" href="https://www.anthropic.com/news/fable-mythos-access" target="_blank" rel="noopener">Primary source ↗</a>
     <button class="btn" id="themeToggle" aria-label="Toggle color theme">Theme</button>
   </div>
